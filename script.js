@@ -41,3 +41,10 @@ const textoResultado = document.querySelector(".texto-resultado);
         ]
     },
  ];
+ let atual = 0;
+ let perguntaAtual;
+ function mostraPergunta() {
+    perguntaAtual = perguntas[atual];
+    caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+mostraPergunta()
